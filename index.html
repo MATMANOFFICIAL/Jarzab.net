@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pl" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Przewozy Jarząb</title>
+    <link id="favicon" rel="icon" type="image/x-icon" href="/images/logo/faviconlight.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header class="container-lg navbar-expand-md bd-navbar fixed-top bg-body-tertiary">
+      <nav id="navId" class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img id="logo" src="images/logo/light.png" alt="Logo" width="auto" height="30px" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Oferta"><span class="d-md-none" data-bs-target="#navbarToggler" data-bs-toggle="collapse">Oferta</span><span class="d-none d-md-inline">Oferta</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#Nasze_pojazdy" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nasze pojazdy</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#Tourismo"><span class="d-md-none" data-bs-target="#navbarToggler" data-bs-toggle="collapse">Mercedes-Benz Tourismo</span><span class="d-none d-md-inline">Mercedes-Benz Tourismo</span></a></li>
+                  <li><a class="dropdown-item" href="#Neoplan"><span class="d-md-none" data-bs-target="#navbarToggler" data-bs-toggle="collapse">Neoplan Reisebus</span><span class="d-none d-md-inline">Neoplan Reisebus</span></a></li>
+                  <li><a class="dropdown-item" href="#Inne"><span class="d-md-none" data-bs-target="#navbarToggler" data-bs-toggle="collapse">Inne</span><span class="d-none d-md-inline">Inne Pojazdy</span></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Kontakt"><span class="d-md-none" data-bs-target="#navbarToggler" data-bs-toggle="collapse">Kontakt</span><span class="d-none d-md-inline">Kontakt</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#O_Nas"><span class="d-md-none" data-bs-target="#navbarToggler" data-bs-toggle="collapse">O nas</span><span class="d-none d-md-inline">O nas</span></a>
+              </li>
+              <li class="nav-item ms-lg-auto">
+                <a class="nav-link" href="https://www.facebook.com/PrzewozyJarzab" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>            
+                  <span class="d-md-none ms-2">Nasza strona na Facebooku</span>          
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                  <symbol id="circle-half" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                  </symbol>
+                  <symbol id="moon-fill" viewBox="0 0 16 16">
+                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  </symbol>
+                  <symbol id="sun-fill" viewBox="0 0 16 16">
+                    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                  </symbol>
+                </svg>
+                <button class="btn btn-link nav-link px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                  id="bd-theme"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-label="Toggle theme (auto)">
+                  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+                    <span class="d-md-none ms-2" id="bd-theme-text">Zmień motyw</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                      Jasny
+                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#moon-fill"></use></svg>
+                      Ciemny
+                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                      <svg class="bi me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                      Auto
+                      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    
+    <main class="container-md" data-bs-spy="scroll" data-bs-target="#navId" >
+      <h3 id="Oferta">Oferta</h3>
+      <hr>
+      Świadczymy usługi transportowe dla osób prywatnych, firm, instytucji, szkół oraz wszelkiego rodzaju grup zorganizowanych.<br>
+      Do Państwa dyspozycji posiadamy komfortowe, klimatyzowane pojazdy  marek Volkswagen, Mercedes-Benz, Neoplan o zróżnicowanej ilości miejsc  -  8, 14, 21, 37, 54.<br>
+      Na czas podróży oferujemy naszym pasażerom  dodatkowe ubezpieczenie NW.<br>
+      Bezpieczeństwo, komfort podróży i zadowolenie naszych klientów są dla nas najważniejsze.<br>
+      Łączymy wysoką jakość oferowanych usług, punktualność i solidność z atrakcyjnymi cenami.<br><br>
+      PROPONUJEMY:<br>
+      - wycieczki szkolne,<br>
+      - przewóz osób w kraju i zagranicą,<br>
+      - przewozy na targi i wystawy,<br>
+      - wyjazdy na koncerty,<br>
+      - pielgrzymki,<br>
+      - obsługę transportową wesela,<br>
+      - obsługę transportową konferencji.<br>
+      - przewozy specjalne na przysięgi wojskowe, kolonie, pogrzeby,<br>
+      - obsługę transportową imprez sportowych, meczy,<br>
+      - obsługa zorganizowanych przez firmę imprez,<br>
+      - holowanie lawetą w kraju i zagranicą,<br>
+      - samochód dostawczy,<br>
+      - przyczepa towarową.
+      <h3 id="Nasze_pojazdy" class="pt-3">Nasze pojazdy</h3>
+      <hr>
+      <h4 id="Tourismo">Mercedes-Benz Tourismo RHD-L (54 miejsca)</h4>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 user-select-none" data-bs-toggle="modal" data-bs-target="#TourismoGalleryModal">
+        <div class="col user-select-none">
+          <img src="images/Tourismo/Tourismo1.jpg" class="w-100" alt="placeholder" data-bs-target="#TourismoGalleryCarousel" role="button" data-bs-slide-to="0">
+        </div>
+        <div class="col d-none d-sm-block user-select-none">
+          <img src="images/Tourismo/Tourismo2.jpg" class="w-100" alt="placeholder" data-bs-target="#TourismoGalleryCarousel" role="button" data-bs-slide-to="1">
+        </div>
+        <div class="col d-none d-lg-block user-select-none">
+          <img src="images/Tourismo/Tourismo3.jpg" class="w-100" alt="placeholder" data-bs-target="#TourismoGalleryCarousel" role="button" data-bs-slide-to="2">
+        </div>
+      </div>
+
+      <div class="modal fade user-select-none" id="TourismoGalleryModal" tabindex="-1" aria-labelledby="TourismoGalleryModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id="TourismoGalleryCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/Tourismo/Tourismo1.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Tourismo/Tourismo2.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Tourismo/Tourismo3.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Tourismo/Tourismo4.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Tourismo/Tourismo5.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Tourismo/Tourismo6.jpg" alt="placeholder" class="w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#TourismoGalleryCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 id="Neoplan" class="pt-3">Neoplan Reisebus</h4>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 user-select-none" data-bs-toggle="modal" data-bs-target="#NeoplanGalleryModal">
+        <div class="col user-select-none">
+          <img src="images/Neoplan/Neoplan1.jpg" class="w-100" alt="placeholder" data-bs-target="#NeoplanGalleryModalGalleryCarousel" role="button" data-bs-slide-to="0">
+        </div>
+        <div class="col d-none d-sm-block user-select-none">
+          <img src="images/Neoplan/Neoplan2.jpg" class="w-100" alt="placeholder" data-bs-target="#NeoplanGalleryModalGalleryCarousel" role="button" data-bs-slide-to="1">
+        </div>
+        <div class="col d-none d-lg-block user-select-none">
+          <img src="images/Neoplan/Neoplan3.jpg" class="w-100" alt="placeholder" data-bs-target="#NeoplanGalleryModalGalleryCarousel" role="button" data-bs-slide-to="2">
+        </div>
+      </div>
+      
+      <h4 id="Inne" class="pt-3">Inne Pojazdy</h4>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 user-select-none" data-bs-toggle="modal" data-bs-target="#InneGalleryModal">
+        <div class="col user-select-none">
+          <img src="images/Inne/Inne1.jpg" class="w-100" alt="placeholder" data-bs-target="#InneGalleryModalGalleryCarousel" role="button" data-bs-slide-to="0">
+        </div>
+        <div class="col d-none d-sm-block user-select-none">
+          <img src="images/Inne/Inne2.jpg" class="w-100" alt="placeholder" data-bs-target="#InneGalleryModalGalleryCarousel" role="button" data-bs-slide-to="1">
+        </div>
+        <div class="col d-none d-lg-block user-select-none">
+          <img src="images/Inne/Inne3.jpg" class="w-100" alt="placeholder" data-bs-target="#InneGalleryModalGalleryCarousel" role="button" data-bs-slide-to="2">
+        </div>
+      </div>
+
+      <div class="modal fade user-select-none" id="NeoplanGalleryModal" tabindex="-1" aria-labelledby="NeoplanGalleryModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id="NeoplanGalleryModalGalleryCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide-to="5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/Neoplan/Neoplan1.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Neoplan/Neoplan2.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Neoplan/Neoplan3.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Neoplan/Neoplan4.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Neoplan/Neoplan5.jpg" alt="placeholder" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Neoplan/Neoplan6.jpg" alt="placeholder" class="w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#NeoplanGalleryModalGalleryCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h3 id="O_Nas" class="pt-3">O nas</h3>
+      <hr>
+      Jesteśmy firmą działającą na rynku od 1994r. Od początku istnienia specjalizujemy się w przewozach pasażerskich na trasach Polski i Europy.<br>
+      Posiadamy Certyfikat Kompetencji Zawodowej oraz niezbędne licencje do przewozu osób.<br>
+      Zdobyte doświadczenie pozwala nam na wykonywanie usług najwyższej jakości, a dewizą firmy jest zadowolenie klienta.
+      W trosce o naszych klientów dbamy o komfort i wygodę podróży podnosząc nieustannie standard naszych samochodów.<br>
+      Cieszymy się, że wciąż przybywa osób i firm, które obdarzają nas swoim zaufaniem.<br>
+      Zapraszamy do korzystania z naszych usług i życzymy bezpiecznej i miłej podróży.<br><br>  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 user-select-none" data-bs-toggle="modal" data-bs-target="#certificateGalleryModal">
+        <div class="col user-select-none">
+          <img src="images/certyfikaty/cert1.jpg" class="w-100" alt="Certyfikat Kompetencji Zawodowych" data-bs-target="#certificateGalleryCarousel" role="button" data-bs-slide-to="0">
+        </div>
+        <div class="col d-none d-sm-block user-select-none">
+          <img src="images/certyfikaty/cert2.jpg" class="w-100" alt="Licencja" data-bs-target="#certificateGalleryCarousel" role="button" data-bs-slide-to="1">
+        </div>
+        <div class="col d-none d-lg-block user-select-none">
+          <img src="images/certyfikaty/cert3.jpg" class="w-100" alt="Zezwolenie" data-bs-target="#certificateGalleryCarousel" role="button" data-bs-slide-to="2">
+        </div>
+      </div>
+
+      <div class="modal fade user-select-none" id="certificateGalleryModal" tabindex="-1" aria-labelledby="certificateGalleryModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id="certificateGalleryCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#certificateGalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#certificateGalleryCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#certificateGalleryCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/certyfikaty/cert1.jpg" alt="Certyfikat Kompetencji Zawodowych" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/certyfikaty/cert2.jpg" alt="Licencja" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/certyfikaty/cert3.jpg" alt="Zezwolenie" class="w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#certificateGalleryCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#certificateGalleryCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h3 id="Kontakt" class="pt-3">Kontakt</h3>
+      <hr>
+      USŁUGI PRZEWOZOWE Andrzej Jarząb<br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg>
+      <a href="https://goo.gl/maps/6qGQ2BASQ6f8u5b2A" target="_blank">39-105 Gnojnica 27</a><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg>
+      <a class="d-sm-none" href="tel:+48733034034" alt="Zadzwoń na +48 733 034 034">+48 733 034 034</a>
+      <span class="d-none d-sm-inline">+48 733 034 034</span><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg>
+      <a class="d-sm-none" href="tel:+48604258621" alt="Zadzwoń na +48 604 258 621">+48 604 258 621</a>
+      <span class="d-none d-sm-inline">+48 604 258 621</span><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg>
+      <a class="d-sm-none" href="tel:+48501789518" alt="Zadzwoń na +48 501 789 518">+48 501 789 518</a>
+      <span class="d-none d-sm-inline">+48 501 789 518</span><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </svg>
+      <a class="d-sm-none" href="tel:+48172216319" alt="Zadzwoń na +48 17 22 16 319">+48 17 22 16 319</a>
+      <span class="d-none d-sm-inline">+48 17 22 16 319</span><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+      </svg>
+      <a href="mailto:przewozyjarzab@wp.pl">przewozyjarzab@wp.pl</a><br>
+      NIP: PL 818-114-29-13<br>
+      REGON: 690 368 843<br>
+      Nr. konta: 40 1240 2669 1111 0010 9751 1785<br>
+      Bank Pekao
+
+
+      <br>
+      <br>
+      <br>
+
+      <img src="images/certyfikaty/rodkowa_PFR_poziom.jpg" alt="Zezwolenie" class="w-100">
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
